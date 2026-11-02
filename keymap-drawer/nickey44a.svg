@@ -328,6 +328,10 @@ path.combo {
 <rect rx="6" ry="6" x="406" y="15" width="28" height="26" class="combo"/>
 <text x="420" y="28" class="combo tap">ESCAPE</text>
 </g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
+<text x="560" y="84" class="combo tap">Ctl+C</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 280)" class="layer-number">
@@ -526,6 +530,10 @@ path.combo {
 <rect rx="6" ry="6" x="406" y="15" width="28" height="26" class="combo"/>
 <text x="420" y="28" class="combo tap">ESCAPE</text>
 </g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
+<text x="560" y="84" class="combo tap">Ctl+C</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 560)" class="layer-kigou">
@@ -719,6 +727,10 @@ path.combo {
 <path d="M420,28 l373,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="15" width="28" height="26" class="combo"/>
 <text x="420" y="28" class="combo tap">ESCAPE</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
+<text x="560" y="84" class="combo tap">Ctl+C</text>
 </g>
 </g>
 </g>
@@ -922,6 +934,10 @@ path.combo {
 <rect rx="6" ry="6" x="406" y="15" width="28" height="26" class="combo"/>
 <text x="420" y="28" class="combo tap">ESCAPE</text>
 </g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
+<text x="560" y="84" class="combo tap">Ctl+C</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1120)" class="layer-bluetooth">
@@ -1124,6 +1140,10 @@ path.combo {
 <path d="M420,28 l373,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="15" width="28" height="26" class="combo"/>
 <text x="420" y="28" class="combo tap">ESCAPE</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
+<text x="560" y="84" class="combo tap">Ctl+C</text>
 </g>
 </g>
 </g>

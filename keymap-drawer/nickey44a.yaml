@@ -232,3 +232,5 @@ combos:
   k: Ctl+V
 - p: [0, 11]
   k: ESCAPE
+- p: [18, 19]
+  k: Ctl+C
