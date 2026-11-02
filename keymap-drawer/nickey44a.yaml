@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: nickey44a}
 layers:
   default:
-  - TAB
+  - LALT
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - ''''
-  - LCTRL
+  - BSPC
+  - LSHFT
   - A
   - S
   - D
@@ -24,14 +24,14 @@ layers:
   - K
   - L
   - ;
-  - '-'
-  - LSHFT
+  - ENTER
+  - LCTRL
   - Z
   - X
   - C
   - V
   - B
-  - {t: ▽, type: trans}
+  - LGUI
   - {t: ▽, type: trans}
   - N
   - M
@@ -44,7 +44,7 @@ layers:
   - SPACE
   - BSPC
   - RET
-  - RALT
+  - SPACE
   '1':
   - ESCAPE
   - '1'
