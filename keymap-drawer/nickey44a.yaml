@@ -225,3 +225,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [16, 15]
+  k: CAPSLOCK
+- p: [19, 20]
+  k: Ctl+V
+- p: [0, 11]
+  k: ESCAPE
