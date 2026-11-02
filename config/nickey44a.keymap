@@ -58,10 +58,10 @@
 
         kigou {
             bindings = <
-&trans  &trans  &trans     &trans      &trans  &trans                    &kp QUESTION   &trans  &trans  &trans  &kp PERCENT  &trans
-&trans  &kp AT  &kp HASH   &kp DOLLAR  &trans  &trans                    &kp EXCL       &trans  &trans  &trans  &trans       &trans
-&trans  &trans  &kp ASTRK  &kp CARET   &trans  &trans  &trans    &trans  &kp AMPERSAND  &trans  &trans  &trans  &trans       &trans
-                                       &trans  &trans  &trans    &trans  &trans         &trans
+&trans  &trans  &trans     &trans      &trans  &trans                    &kp CARET         &kp AMPERSAND      &kp PRCNT             &kp MINUS              &kp UNDER  &kp AT
+&trans  &kp AT  &kp HASH   &kp DOLLAR  &trans  &trans                    &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp BSLH
+&trans  &trans  &kp ASTRK  &kp CARET   &trans  &trans  &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp FSLH   &kp PLUS
+                                       &trans  &trans  &trans    &trans  &trans            &trans
             >;
         };
 
