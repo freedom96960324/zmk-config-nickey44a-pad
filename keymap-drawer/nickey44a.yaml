@@ -59,17 +59,24 @@ layers:
   - '0'
   - '`'
   - LEFT WIN
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - F1
   - F2
   - F3
   - F4
   - F5
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - {t: ▽, type: trans}
   - '~'
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F6
   - F7
@@ -77,17 +84,10 @@ layers:
   - F9
   - F10
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '['
-  - (
-  - )
-  - ']'
-  - \
-  - {t: ▽, type: trans}
   - {t: bluetooth, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DELETE
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   kigou:
