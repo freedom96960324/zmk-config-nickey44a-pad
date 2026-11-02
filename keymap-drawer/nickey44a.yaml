@@ -11,7 +11,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - {t: P, h: '!'}
   - BSPC
   - LSHFT
   - A
@@ -20,32 +20,32 @@ layers:
   - F
   - G
   - H
-  - J
+  - {t: J, h: arrow}
   - K
   - L
-  - ;
+  - {t: '-', h: '?'}
   - ENTER
   - LCTRL
-  - Z
+  - {t: Z, h: LEFT SHIFT}
   - X
   - C
-  - V
+  - {t: V, h: bluetooth}
   - B
   - LGUI
-  - {t: ▽, type: trans}
+  - DEL
   - N
   - M
   - ','
   - .
-  - /
-  - '='
-  - '2'
-  - '1'
+  - Ctl+C
+  - Ctl+V
+  - {t: SPACE, h: number}
+  - {t: SPACE, h: kigou}
   - SPACE
   - BSPC
   - RET
   - SPACE
-  '1':
+  number:
   - ESCAPE
   - '1'
   - '2'
@@ -84,13 +84,13 @@ layers:
   - ']'
   - \
   - {t: ▽, type: trans}
-  - '3'
-  - {type: held}
+  - {t: bluetooth, type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '2':
+  kigou:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -129,13 +129,58 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  arrow:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '3':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  bluetooth:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -164,18 +209,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
