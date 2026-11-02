@@ -30,6 +30,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 11>;
         };
+
+        ctrl-c {
+            bindings = <&kp RC(C)>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
