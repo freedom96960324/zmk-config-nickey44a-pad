@@ -40,8 +40,8 @@ layers:
   - Ctl+C
   - Ctl+V
   - {t: SPACE, h: number}
-  - SPACE
   - {t: SPACE, h: kigou}
+  - SPACE
   - BSPC
   - RET
   - SPACE
@@ -130,8 +130,8 @@ layers:
   - /
   - +
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
