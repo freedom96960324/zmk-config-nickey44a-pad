@@ -31,7 +31,7 @@ layers:
   - C
   - {t: V, h: bluetooth}
   - B
-  - LGUI
+  - {t: LANGUAGE 2, h: LANGUAGE 1}
   - DEL
   - N
   - M
