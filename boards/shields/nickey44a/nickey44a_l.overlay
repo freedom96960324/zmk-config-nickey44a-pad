@@ -68,9 +68,8 @@
             compatible = "zmk,input-split";
             reg = <0>;
             device = <&left_yupad>;
-            /* Left pad does not move the cursor. Order matters: drop HWHEEL before remapping WHEEL. */
-            input-processors = <&zip_xy_scaler 0 1>,
-                               <&left_hwheel_drop>,
+            /* Order matters: drop HWHEEL before remapping WHEEL. */
+            input-processors = <&left_hwheel_drop>,
                                <&left_wheel_to_hwheel>,
                                <&left_middle_click_mapper>;
         };
