@@ -25,6 +25,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 11>;
         };
+
+        ctrl-v {
+            bindings = <&kp RC(V)>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
