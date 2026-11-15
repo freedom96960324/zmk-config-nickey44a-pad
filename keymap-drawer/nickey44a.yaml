@@ -230,3 +230,5 @@ combos:
   k: CAPSLOCK
 - p: [0, 11]
   k: ESCAPE
+- p: [19, 20]
+  k: Ctl+V
