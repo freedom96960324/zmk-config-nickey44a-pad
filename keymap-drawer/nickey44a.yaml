@@ -21,7 +21,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - H
-  - J
+  - {t: J, h: arrow}
   - K
   - L
   - {t: '-', h: '?'}
@@ -136,40 +136,40 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   arrow:
-  - {t: ▽, type: trans}
   - Q
   - W
   - E
   - R
   - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Y
   - U
   - I
   - O
   - P
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - A
   - S
   - D
   - F
   - G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - UP ARROW
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LCTRL
-  - LSHFT
-  - F2
-  - I
-  - O
+  - Z
+  - X
+  - C
+  - V
   - B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DOWN ARROW
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DOWN ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
