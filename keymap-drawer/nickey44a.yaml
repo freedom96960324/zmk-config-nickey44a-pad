@@ -136,26 +136,26 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   arrow:
+  - {t: ▽, type: trans}
   - Q
   - W
   - E
   - R
   - T
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - Y
   - U
   - I
   - O
   - P
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - A
   - S
   - D
   - F
   - G
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: UP ARROW, type: held}
+  - UP ARROW
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -165,11 +165,11 @@ layers:
   - F2
   - I
   - O
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DOWN ARROW
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
