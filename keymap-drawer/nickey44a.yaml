@@ -1,47 +1,47 @@
 layout: {zmk_keyboard: nickey44a}
 layers:
   default:
-  - LALT
-  - Q
+  - {t: Q, h: LEFT ALT}
   - W
   - E
   - R
   - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Y
   - U
   - I
   - O
   - {t: P, h: '!'}
-  - BSPC
-  - LSHFT
-  - A
+  - {t: A, h: LEFT SHIFT}
   - S
   - D
   - F
   - G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - H
-  - {t: J, h: arrow}
+  - J
   - K
   - L
   - {t: '-', h: '?'}
-  - ENTER
-  - LCTRL
-  - {t: Z, h: LEFT SHIFT}
+  - {t: Z, h: LEFT CONTROL}
   - X
   - C
-  - {t: V, h: bluetooth}
+  - V
   - B
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - N
   - M
   - ','
-  - .
-  - Ctl+C
+  - {t: ., h: Ctl+C}
   - Ctl+V
-  - {t: SPACE, h: number}
-  - {t: SPACE, h: kigou}
-  - SPACE
+  - {t: LEFT CONTROL, h: number}
+  - {t: LEFT SHIFT, h: kigou}
+  - LEFT ALT
   - BSPC
   - RET
   - SPACE
@@ -155,7 +155,7 @@ layers:
   - F
   - G
   - UP ARROW
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -209,7 +209,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
