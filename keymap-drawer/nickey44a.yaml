@@ -46,36 +46,37 @@ layers:
   - RET
   - SPACE
   number:
-  - ESCAPE
   - '1'
   - '2'
   - '3'
   - '4'
   - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '6'
   - '7'
   - '8'
   - '9'
   - '0'
-  - '`'
-  - LEFT WIN
   - '6'
   - '7'
   - '8'
   - '9'
   - '0'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - '~'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F1
   - F2
   - F3
   - F4
   - F5
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F6
@@ -83,7 +84,6 @@ layers:
   - F8
   - F9
   - F10
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
