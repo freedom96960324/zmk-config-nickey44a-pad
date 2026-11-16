@@ -5,13 +5,16 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 /*
- * yuPad43 (IQS9151) wiring — same XIAO pins as the former TPS43 breakout:
- *   yuPad43 pin 6 SDA  = XIAO NFC1/P0.09
- *   yuPad43 pin 5 SCL  = XIAO P1.01
- *   yuPad43 pin 1 RDY  = XIAO P0.15 (active-low)
- *   yuPad43 pin 2 RST  = XIAO P0.19 (not driven; the driver uses soft reset)
- *   yuPad43 pin 4 3V3  = XIAO 3V3
+ * yuPad43 (IQS9151) wiring — the former TPS43 harness is reused as-is.
+ * TPS43 J1 is 1 RDY / 2 SDA / 3 GND / 4 VDD / 5 SCL / 6 NRST, while
+ * yuPad43 is 1 RDY / 2 RST / 3 GND / 4 3V3 / 5 SCL / 6 SDA, so the wires
+ * on pins 2 and 6 trade roles. SDA therefore moves from P0.09 to P0.19:
+ *   yuPad43 pin 1 RDY  = XIAO P0.15 (D11, active-low)
+ *   yuPad43 pin 2 RST  = XIAO P0.09 (D14/NFC1, left as input; board pull-up keeps it high)
  *   yuPad43 pin 3 GND  = XIAO GND
+ *   yuPad43 pin 4 3V3  = XIAO 3V3
+ *   yuPad43 pin 5 SCL  = XIAO P1.01 (D13)
+ *   yuPad43 pin 6 SDA  = XIAO P0.19 (D12)
  */
 
 &uicr {
@@ -21,14 +24,14 @@
 &pinctrl {
     nickey44a_left_yupad_i2c0_default: nickey44a_left_yupad_i2c0_default {
         group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 9)>,
+            psels = <NRF_PSEL(TWIM_SDA, 0, 19)>,
                     <NRF_PSEL(TWIM_SCL, 1, 01)>;
         };
     };
 
     nickey44a_left_yupad_i2c0_sleep: nickey44a_left_yupad_i2c0_sleep {
         group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 9)>,
+            psels = <NRF_PSEL(TWIM_SDA, 0, 19)>,
                     <NRF_PSEL(TWIM_SCL, 1, 01)>;
             low-power-enable;
         };
