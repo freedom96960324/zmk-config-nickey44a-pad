@@ -160,11 +160,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - V
-  - B
+  - LCTRL
+  - LSHFT
+  - F2
+  - I
+  - O
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -177,9 +177,9 @@ layers:
   - LEFT ARROW
   - SPACE
   - RIGHT ARROW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - SPACE
+  - SPACE
+  - SPACE
   bluetooth:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
