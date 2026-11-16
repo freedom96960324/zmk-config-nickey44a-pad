@@ -39,9 +39,9 @@ layers:
   - ','
   - {t: ., h: Ctl+C}
   - Ctl+V
-  - {t: LEFT CONTROL, h: number}
-  - {t: LEFT SHIFT, h: kigou}
-  - LEFT ALT
+  - {t: SPACE, h: number}
+  - {t: SPACE, h: kigou}
+  - ENTER
   - BSPC
   - RET
   - SPACE
