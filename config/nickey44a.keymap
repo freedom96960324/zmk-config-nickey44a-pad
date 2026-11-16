@@ -18,7 +18,7 @@
 
         caplock {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <16 15>;
+            key-positions = <15 14>;
         };
 
         escape {
@@ -28,7 +28,12 @@
 
         ctrl-v {
             bindings = <&kp RC(V)>;
-            key-positions = <19 20>;
+            key-positions = <20 21>;
+        };
+
+        ctrl-c {
+            bindings = <&kp RC(C)>;
+            key-positions = <8 9>;
         };
     };
 
