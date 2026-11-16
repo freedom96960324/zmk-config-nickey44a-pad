@@ -226,9 +226,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [16, 15]
+- p: [15, 14]
   k: CAPSLOCK
 - p: [0, 11]
   k: ESCAPE
-- p: [19, 20]
+- p: [20, 21]
   k: Ctl+V
+- p: [8, 9]
+  k: Ctl+C
