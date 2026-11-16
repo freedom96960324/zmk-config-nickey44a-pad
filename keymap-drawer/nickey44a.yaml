@@ -31,8 +31,8 @@ layers:
   - C
   - {t: V, h: bluetooth}
   - B
-  - {t: LANGUAGE 2, h: LANGUAGE 1}
-  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - N
   - M
   - ','
