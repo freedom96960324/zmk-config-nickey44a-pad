@@ -91,7 +91,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   kigou:
-  - {t: ▽, type: trans}
+  - /
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -100,25 +101,25 @@ layers:
   - ^
   - '&'
   - '%'
-  - '-'
   - _
   - '@'
-  - {t: ▽, type: trans}
   - '@'
   - '#'
   - $
   - '%'
+  - '|'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - <
   - '>'
   - (
   - )
-  - '='
   - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '*'
   - ^
+  - +
+  - '-'
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -127,7 +128,6 @@ layers:
   - ']'
   - '{'
   - '}'
-  - /
   - +
   - {t: ▽, type: trans}
   - {type: held}
