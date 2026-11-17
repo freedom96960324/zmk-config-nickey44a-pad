@@ -7,7 +7,7 @@
 /*
  * yuPad43 (IQS9151) wiring — Nickey44A trackpad harness (nickey-docs):
  *   yuPad43 pin 1 RDY  = XIAO P1.10 (yellow, hidden GPIO pad, active-low)
- *   yuPad43 pin 2 RST  = XIAO P0.16 (white, hidden GPIO pad, not driven)
+ *   yuPad43 pin 2 RST  = not connected (the board pull-up keeps it released)
  *   yuPad43 pin 3 GND  = PCB pad 1 (black)
  *   yuPad43 pin 4 3V3  = PCB pad 6 (red)
  *   yuPad43 pin 5 SCL  = PCB pad 3 = XIAO NFC2/P0.10 (blue)
@@ -60,11 +60,20 @@
         map = <INPUT_BTN_1 INPUT_BTN_2>;
     };
 
-    /*
-     * TEMPORARY SAFE MODE: the left yuPad43 still runs, but its events are not
-     * forwarded to the right half while its runaway input is investigated.
-     * Re-add the split_inputs/left_yupad_split block (see git history) to re-enable.
-     */
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        left_yupad_split: left_yupad_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+            device = <&left_yupad>;
+            /* Order matters: drop HWHEEL before remapping WHEEL. */
+            input-processors = <&left_hwheel_drop>,
+                               <&left_wheel_to_hwheel>,
+                               <&left_middle_click_mapper>;
+        };
+    };
 };
 
 &i2c0 {
