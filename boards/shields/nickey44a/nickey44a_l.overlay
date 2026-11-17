@@ -63,7 +63,10 @@
             compatible = "zmk,input-split";
             reg = <0>;
             device = <&left_tps43>;
-            /* Left pad works the same as the right pad (no remapping). */
+            /* Keep swipe motion distinct from the mapped horizontal scroll. */
+            input-processors = <&left_swipe_axis_mapper>,
+                               <&left_wheel_to_hwheel>,
+                               <&left_middle_click_mapper>;
         };
     };
 };
