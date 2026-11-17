@@ -107,6 +107,8 @@
         /* yuPad43: orientation is set by CONFIG_INPUT_IQS9151_ROTATE_*.
          * TPS43-only processors (orientation/touch-swipe/touch-inertia) need
          * BTN_TOUCH, which the IQS9151 driver does not send, so they are off. */
+        /* Two-finger scroll: finger down = page scrolls down. */
+        input-processors = <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
 
         snipe_layer {
             layers = <1>;
