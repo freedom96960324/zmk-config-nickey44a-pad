@@ -49,8 +49,8 @@
     left_tps43_listener: left_tps43_listener {
         compatible = "zmk,input-listener";
         device = <&left_tps43_split>;
-        /* Speed: cursor 1/2, scroll 1/2 */
-        input-processors = <&zip_xy_scaler 1 2>, <&zip_scroll_scaler 1 2>;
+        /* Speed: cursor 65%, scroll 1/2 */
+        input-processors = <&zip_xy_scaler 13 20>, <&zip_scroll_scaler 1 2>;
     };
 
     left_tps43_tab_swipe: left_tps43_tab_swipe {
@@ -110,9 +110,9 @@
          * TPS43-only processors (orientation/touch-swipe/touch-inertia) need
          * BTN_TOUCH, which the IQS9151 driver does not send, so they are off. */
         /* Two-finger scroll: finger down = page scrolls down. */
-        /* Speed: cursor 1/2, scroll 1/2 */
+        /* Speed: cursor 65%, scroll 1/2 */
         input-processors = <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
-                           <&zip_xy_scaler 1 2>, <&zip_scroll_scaler 1 2>;
+                           <&zip_xy_scaler 13 20>, <&zip_scroll_scaler 1 2>;
 
         snipe_layer {
             layers = <1>;
