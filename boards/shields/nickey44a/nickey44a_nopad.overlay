@@ -1,0 +1,8 @@
+/*
+ * TEST ONLY: left half with the trackpad turned off.
+ * The driver looks for the pad at a wrong address, gives up at boot,
+ * and never touches the pad again. Keys are unaffected.
+ */
+&left_tps43 {
+    reg = <0x55>;
+};
