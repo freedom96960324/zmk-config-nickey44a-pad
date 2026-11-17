@@ -18,7 +18,7 @@
 
         caplock {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <15 14>;
+            key-positions = <16 15>;
         };
 
         escape {
