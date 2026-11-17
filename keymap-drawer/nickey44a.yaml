@@ -271,7 +271,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [15, 14]
+- p: [16, 15]
   k: CAPSLOCK
 - p: [0, 11]
   k: ESCAPE
