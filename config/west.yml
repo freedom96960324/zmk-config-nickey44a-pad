@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/cormoran
     - name: caksoylar  # <-- RGB LED
       url-base: https://github.com/caksoylar
-    - name: freedom96960324
-      url-base: https://github.com/freedom96960324
+    - name: yuchamichami
+      url-base: https://github.com/yuchamichami
   projects:
     - name: zmk
       remote: cormoran
@@ -17,8 +17,7 @@ manifest:
       remote: caksoylar
       revision: 8756cb7b8114069fa3c25c6f6c990f24988fceff # v0.3
     - name: zmk-driver-yupad43
-      remote: freedom96960324
-      # official driver 5dfa6d3 + pad work on its own high-priority work queue
-      revision: 8138e393aa3263e3f112b6806802bac5ebed3586
+      remote: yuchamichami
+      revision: 5dfa6d3c480ebb5162f5425fa367823d73ddb13e
   self:
     path: config
