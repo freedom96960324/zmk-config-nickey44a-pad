@@ -19,6 +19,6 @@ manifest:
     - name: zmk-driver-yupad43
       remote: freedom96960324
       # official driver 5dfa6d3 + recovery when the pad resets or the I2C bus gets stuck
-      revision: 36bd3c42b184a9bf915a42c6f2a95e6d03353ca3
+      revision: 9be5be086cec27f867c080f60055151bd5d52693
   self:
     path: config
