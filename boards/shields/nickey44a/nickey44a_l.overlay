@@ -63,8 +63,7 @@
             compatible = "zmk,input-split";
             reg = <0>;
             device = <&left_tps43>;
-            /* 2-finger vertical swipe = vertical scroll (no axis remapping). */
-            input-processors = <&left_middle_click_mapper>;
+            /* No remapping: 2-finger tap = right click, 2-finger swipe = scroll. */
         };
     };
 };
