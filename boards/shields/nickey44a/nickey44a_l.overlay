@@ -63,10 +63,8 @@
             compatible = "zmk,input-split";
             reg = <0>;
             device = <&left_tps43>;
-            /* Keep swipe motion distinct from the mapped horizontal scroll. */
-            input-processors = <&left_swipe_axis_mapper>,
-                               <&left_wheel_to_hwheel>,
-                               <&left_middle_click_mapper>;
+            /* 2-finger vertical swipe = vertical scroll (no axis remapping). */
+            input-processors = <&left_middle_click_mapper>;
         };
     };
 };
