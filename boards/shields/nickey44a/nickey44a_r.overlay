@@ -53,11 +53,11 @@
         input-processors = <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
                            <&zip_xy_scaler 13 20>, <&zip_scroll_scaler 1 2>;
 
-        /* While layer 1 is held: two-finger scroll 1/15 speed */
+        /* While layer 1 is held: two-finger scroll 1/60 speed */
         snipe_layer {
             layers = <1>;
             process-next;
-            input-processors = <&zip_scroll_scaler 1 15>;
+            input-processors = <&zip_scroll_scaler 1 60>;
         };
     };
 
@@ -125,7 +125,7 @@
         snipe_layer {
             layers = <1>;
             process-next;
-            input-processors = <&zip_xy_scaler 2 3>, <&zip_scroll_scaler 1 15>;
+            input-processors = <&zip_xy_scaler 2 3>, <&zip_scroll_scaler 1 60>;
         };
     };
 };
