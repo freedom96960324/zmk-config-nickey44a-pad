@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: yuchamichami
       url-base: https://github.com/yuchamichami
+    - name: kot149
+      url-base: https://github.com/kot149
   projects:
     - name: zmk
       remote: cormoran
@@ -19,5 +21,8 @@ manifest:
     - name: zmk-driver-yupad43
       remote: yuchamichami
       revision: 5dfa6d3c480ebb5162f5425fa367823d73ddb13e
+    - name: zmk-scroll-snap
+      remote: kot149
+      revision: 6b2dccaab2d5b99ca8b79300b9a792fefb01c42d # v1
   self:
     path: config
