@@ -49,15 +49,15 @@
     left_tps43_listener: left_tps43_listener {
         compatible = "zmk,input-listener";
         device = <&left_tps43_split>;
-        /* Same scroll direction as the right pad; speed: cursor 65%, scroll 1/4 */
+        /* Same scroll direction as the right pad; speed: cursor 65%, scroll 3/16 */
         input-processors = <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
-                           <&zip_xy_scaler 13 20>, <&zip_scroll_scaler 1 4>;
+                           <&zip_xy_scaler 13 20>, <&zip_scroll_scaler 3 16>;
 
         /* While layer 1 is held: two-finger scroll 1/60 speed */
         snipe_layer {
             layers = <1>;
             process-next;
-            input-processors = <&zip_scroll_scaler 1 60>;
+            input-processors = <&zip_scroll_scaler 1 45>;
         };
     };
 
@@ -118,14 +118,14 @@
          * TPS43-only processors (orientation/touch-swipe/touch-inertia) need
          * BTN_TOUCH, which the IQS9151 driver does not send, so they are off. */
         /* Two-finger scroll: finger down = page scrolls down. */
-        /* Speed: cursor 65%, scroll 1/8 */
+        /* Speed: cursor 65%, scroll 3/32 */
         input-processors = <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
-                           <&zip_xy_scaler 13 20>, <&zip_scroll_scaler 1 8>;
+                           <&zip_xy_scaler 13 20>, <&zip_scroll_scaler 3 32>;
 
         snipe_layer {
             layers = <1>;
             process-next;
-            input-processors = <&zip_xy_scaler 2 3>, <&zip_scroll_scaler 1 30>;
+            input-processors = <&zip_xy_scaler 2 3>, <&zip_scroll_scaler 2 45>;
         };
     };
 };
