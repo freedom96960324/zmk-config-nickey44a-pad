@@ -20,7 +20,7 @@ manifest:
       revision: 8756cb7b8114069fa3c25c6f6c990f24988fceff # v0.3
     - name: zmk-driver-yupad43
       remote: yuchamichami
-      revision: 5dfa6d3c480ebb5162f5425fa367823d73ddb13e
+      revision: 58e590adbe448924ac104747ee6366d79f16d04c
     - name: zmk-scroll-snap
       remote: kot149
       revision: 6b2dccaab2d5b99ca8b79300b9a792fefb01c42d # v1
