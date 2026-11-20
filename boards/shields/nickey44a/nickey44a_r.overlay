@@ -1,5 +1,6 @@
 #include "nickey44a.dtsi"
 #include <input/processors.dtsi>
+#include <scroll-snap.dtsi>
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/pinctrl/nrf-pinctrl.h>
 #include <dt-bindings/zmk/input_transform.h>
@@ -49,15 +50,16 @@
     left_tps43_listener: left_tps43_listener {
         compatible = "zmk,input-listener";
         device = <&left_tps43_split>;
-        /* Same scroll direction as the right pad; speed: cursor 65%, scroll 3/16 */
-        input-processors = <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
-                           <&zip_xy_scaler 13 20>, <&zip_scroll_scaler 3 16>;
+        /* Matched to LalaPadGen2: scroll direction, scroll snap,
+         * cursor and smooth-scroll speed per mm of finger travel. */
+        input-processors = <&zip_scroll_snap>,
+                           <&zip_xy_scaler 39 100>, <&zip_scroll_scaler 4 25>;
 
-        /* While layer 1 is held: two-finger scroll 1/60 speed */
+        /* While layer 1 is held: cursor 1/3, scroll 3/10 (same ratio as LalaPadGen2) */
         snipe_layer {
             layers = <1>;
             process-next;
-            input-processors = <&zip_scroll_scaler 1 45>;
+            input-processors = <&zip_xy_scaler 1 3>, <&zip_scroll_scaler 3 10>;
         };
     };
 
@@ -117,15 +119,16 @@
         /* yuPad43: orientation is set by CONFIG_INPUT_IQS9151_ROTATE_*.
          * TPS43-only processors (orientation/touch-swipe/touch-inertia) need
          * BTN_TOUCH, which the IQS9151 driver does not send, so they are off. */
-        /* Two-finger scroll: finger down = page scrolls down. */
-        /* Speed: cursor 65%, scroll 3/32 */
-        input-processors = <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
-                           <&zip_xy_scaler 13 20>, <&zip_scroll_scaler 3 32>;
+        /* Matched to LalaPadGen2: scroll direction, scroll snap,
+         * cursor and smooth-scroll speed per mm of finger travel. */
+        input-processors = <&zip_scroll_snap>,
+                           <&zip_xy_scaler 39 100>, <&zip_scroll_scaler 4 25>;
 
+        /* While layer 1 is held: cursor 1/3, scroll 3/10 (same ratio as LalaPadGen2) */
         snipe_layer {
             layers = <1>;
             process-next;
-            input-processors = <&zip_xy_scaler 2 3>, <&zip_scroll_scaler 2 45>;
+            input-processors = <&zip_xy_scaler 1 3>, <&zip_scroll_scaler 3 10>;
         };
     };
 };
