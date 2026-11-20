@@ -119,10 +119,11 @@
         /* yuPad43: orientation is set by CONFIG_INPUT_IQS9151_ROTATE_*.
          * TPS43-only processors (orientation/touch-swipe/touch-inertia) need
          * BTN_TOUCH, which the IQS9151 driver does not send, so they are off. */
-        /* Matched to LalaPadGen2: scroll direction, scroll snap,
-         * cursor and smooth-scroll speed per mm of finger travel. */
-        input-processors = <&zip_scroll_snap>,
-                           <&zip_xy_scaler 39 100>, <&zip_scroll_scaler 4 25>;
+        /* Matched to LalaPadGen2: scroll direction,
+         * cursor and smooth-scroll speed per mm of finger travel.
+         * No scroll snap here: this pad scrolls vertically only, and snap
+         * holds back the first samples, which made short swipes do nothing. */
+        input-processors = <&zip_xy_scaler 39 100>, <&zip_scroll_scaler 4 25>;
 
         /* While layer 1 is held: cursor 1/3, scroll 3/10 (same ratio as LalaPadGen2) */
         snipe_layer {
