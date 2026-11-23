@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - {t: '-', h: '?'}
-  - ENTER
+  - Ctl+V
   - LEFT CONTROL
   - {t: Z, h: LEFT SHIFT}
   - X
@@ -37,8 +37,8 @@ layers:
   - M
   - ','
   - .
+  - LEFT WIN
   - Ctl+C
-  - Ctl+V
   - {t: SPACE, h: number}
   - {t: SPACE, h: kigou}
   - ENTER
