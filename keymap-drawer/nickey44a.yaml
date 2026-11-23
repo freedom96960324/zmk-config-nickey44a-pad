@@ -155,7 +155,7 @@ layers:
   - F
   - G
   - UP ARROW
-  - {type: held}
+  - {t: J, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
